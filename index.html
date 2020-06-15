@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-sm-2 col-md-2 col-lg-2"></div>
                 <div class="col-sm-8 col-md-8 col-lg-8 mb-1 p-1">
-                    <input type="text" class="text-right resultado form-control" placeholder = "0" id="">
+                    <input type="text" class="text-right resultado form-control" placeholder = "0" id="resultado">
                 </div>
                 <div class="col-sm-2 col-md-2 col-lg-2"></div>
 
@@ -30,10 +30,10 @@
                     <div class="row">
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1"></div>
                         <div class="col-sm-6 col-md-6 col-lg-6 mb-1 p-1">
-                            <button class="w-100 border border-white btn btn-outline-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">c</button>
+                            <button class="w-100 border border-white btn btn-outline-warning d-flex justify-content-center align-items-center botones" name="reset" type="button">c</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1">
-                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button">÷</button>
+                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button" id="oper">÷</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1"></div>
                     </div>
@@ -49,7 +49,7 @@
                             <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">9</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1">
-                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button">x</button>
+                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button" id="oper">x</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1"></div>
                     </div>
@@ -65,7 +65,7 @@
                             <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">6</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1">
-                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button">-</button>
+                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button" id="oper">-</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1"></div>
                     </div>
@@ -81,7 +81,7 @@
                             <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">3</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1">
-                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button">+</button>
+                            <button class="w-100 btn btn-primary d-flex justify-content-center align-items-center botones" name="numeros" type="button" id="oper">+</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1"></div>
                     </div>
@@ -92,7 +92,7 @@
                             <button class="w-100 btn btn-info d-flex justify-content-center align-items-center botones" name="numeros" type="button">0</button>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4 mb-1 p-1">
-                            <button class="w-100 border border-white btn btn-outline-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">=</button>
+                            <button class="w-100 border border-white btn btn-outline-warning d-flex justify-content-center align-items-center botones" name="igualdad" type="button">=</button>
                         </div>
                         <div class="col-sm-2 col-md-2 col-lg-2 mb-1 p-1"></div>
                     </div>
@@ -108,6 +108,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/insertar.js"></script>
 </body>
 
 </html>
