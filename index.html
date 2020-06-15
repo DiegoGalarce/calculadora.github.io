@@ -7,25 +7,96 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
-    <meta name="author" content="Diego Galarce"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta name="author" content="Diego Galarce" />
     <meta name="Calculadora" content="Es una pagina de calculadora básica" />
     <meta name="keyword" content="trabajo práctico calculadora básica" />
 </head>
 
 <body>
-    <header class="d-flex justify-content-center">
+    <main>
         <div class="mt-5 shadow p-3 mb-2 rounded">
-            <h1 class="text-white "><strong>CALCULADORA</strong></h1>
+            <h1 class="text-white text-center"><strong>CALCULADORA</strong></h1>
         </div>
-    </header>
-
-
-    <main class="container">
-        
-        
-        <section class="efecto">
+        <section class="container d-flex justify-content-center">
             <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-sm-8 col-md-8 col-lg-8 mb-1 p-1">
+                    <input type="text" class="text-right resultado form-control" placeholder = "0" id="">
+                </div>
+                <div class="col-lg-2"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                        <div class="col-lg-6 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">c</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">÷</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">7</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">8</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">9</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">x</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">4</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">5</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">6</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">-</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">1</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">2</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">3</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">+</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                        
+                        <div class="col-lg-4 mb-1 p-1">
+                            <button class="w-100 btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">0</button>
+                        </div>
+                        <div class="col-lg-4 mb-1 p-1">
+                            <button class="w-100 border border-white btn btn-warning d-flex justify-content-center align-items-center botones" name="numeros" type="button">=</button>
+                        </div>
+                        <div class="col-lg-2 mb-1 p-1"></div>
+                    </div>
+                </div>
 
 
             </div>
