@@ -1,0 +1,21 @@
+body{
+    background: url(../img/fondo.jpg) no-repeat fixed center center #333;
+    background-size: cover;
+}
+.titulo{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+.efecto img:hover{
+    border-radius: 5px;
+    opacity: 50%;
+    transition: all .5 ease-in-out;
+}
+.columna img:hover{
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    box-shadow: 5px 5px 10px 0px #333;
+    transition: .5s;
+}
