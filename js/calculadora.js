@@ -15,6 +15,7 @@ let operacion = undefined;
 
 //evento addEventListener() Registra un evento a un objeto en específico
 //El método forEach() ejecuta la función indicada una vez por cada elemento del array.
+//se utilizo addEventListener, pero tambien se prodria usar onclick.
 numeros.forEach(function (boton) {
     boton.addEventListener("click", function () {
         agregarNumero(boton.innerHTML);
