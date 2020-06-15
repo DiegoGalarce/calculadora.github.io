@@ -1,9 +1,6 @@
 body{
-    background: url(../img/fondo.jpg) no-repeat fixed center center #333;
+    background: url(../img/fondodos.jpg) no-repeat fixed center center #333;
     background-size: cover;
-}
-.titulo{
-    font-family: 'Shadows Into Light', cursive;
 }
 
 
