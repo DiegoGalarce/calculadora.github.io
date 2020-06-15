@@ -36,6 +36,41 @@ botonReset.addEventListener("click", function () {
     clear(); //metado de limpiar
     actualizarDisplay();
 });
+function selectOperacion(op) {
+    if (operActual === "") return;
+    if (operAnterior !== "") {
+        calcular()
+    }
+    operacion = op.toString();
+    operAnterior = operActual;
+    operActual = "";
+}
+function calcular() {
+    let calculo;//guardamos la operacion
+    //Convierte (parsea) un argumento de tipo cadena y devuelve un número de punto flotante.
+    const anterior = parseInt(operAnterior);
+    const actual = parseInt(operActual);
+    if (isNaN(anterior) || isNaN(actual)) return;
+    switch (operacion) {
+        case "+":
+            calculo = anterior + actual;
+            break;
+        case "-":
+            calculo = anterior - actual;
+            break;
+        case "x":
+            calculo = anterior * actual;
+            break;
+        case "÷":
+            calculo = anterior / actual;
+            break;
+        default:
+            return;
+    }
+    operActual = calculo;
+    operacion = undefined;
+    operAnterior = "";
+}
 
 
 function agregarNumero(num) {
@@ -45,7 +80,7 @@ function agregarNumero(num) {
     actualizarDisplay();
 }
 //clear inicializamos nuestra variables
-function clear(){
+function clear() {
     operActual = "";
     operAnterior = "";
     operacion = undefined;
@@ -55,6 +90,8 @@ function actualizarDisplay() {
 }
 
 clear();
+
+
 
 
 
